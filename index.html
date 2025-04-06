@@ -31,17 +31,33 @@
         transform: translateY(0);
       }
     }
+    .hero {
+      background: url('https://preview.redd.it/big-dump-of-4k-wallpapers-with-shaders-from-the-season-9-v0-88ibwoyvl98c1.png?width=3840&format=png&auto=webp&s=d9fdf7680bdabbf2ae742460885898fbd4c8cea9') no-repeat center 90%;
+      background-size: cover;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 150px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #0f0f0f);
+    }
   </style>
 </head>
 <body class="min-h-screen flex flex-col items-center justify-center px-4">
 
-  <!-- Title -->
-  <div class="text-center mt-10 fade-in-up">
-    <h1 class="text-4xl md:text-6xl text-green-400 mb-4">THANKAN SMP</h1>
-    <p class="text-lg md:text-xl text-gray-300 font-sans">Official Minecraft Server of <span class="text-purple-400">@james.club0</span></p>
-  </div>
+  <section class="hero w-full h-[350px] md:h-[450px] flex flex-col justify-center items-center text-center relative z-10 fade-in-up">
+    <div class="z-20 relative">
+      <h1 class="text-4xl md:text-6xl mb-4" style="color: #71A9F7; text-shadow: 0 0 10px black, 0 0 20px #71A9F7;">
+  THANKAN SMP
+</h1>
+      <p class="text-lg md:text-xl text-gray-200 font-sans drop-shadow-sm" style="color: #0F084B; text-shadow: 0 0 10px black, 0 0 20px #71A9F7;" >Official Minecraft Server of <span style="text-color:#F58F29,"class="text-400">@james.club0</span></p>
+    </div>
+  </section>
 
-  <!-- Server Info -->
   <div class="mt-10 w-full max-w-2xl fade-in-up">
     <div class="bg-gray-900 rounded-2xl shadow-xl p-6 mb-6 hover:scale-105 transition-transform">
       <h2 class="text-2xl text-yellow-400">Java Edition</h2>
@@ -54,7 +70,6 @@
     </div>
   </div>
 
-  <!-- Discord Join -->
   <div class="mt-10 text-center fade-in-up">
     <h2 class="text-2xl md:text-3xl text-cyan-400 mb-4">🎮 Join Our Discord</h2>
     <a href="https://discord.gg/nf9kpUFkwc" target="_blank"
@@ -63,7 +78,6 @@
     </a>
   </div>
 
-  <!-- About Section -->
   <div class="mt-16 w-full max-w-3xl fade-in-up">
     <h2 class="text-3xl text-green-400 mb-4 text-center">🌍 About Thankan SMP</h2>
     <p class="text-gray-300 text-center px-4 font-sans">
@@ -72,7 +86,6 @@
     </p>
   </div>
 
-  <!-- Rules Section -->
   <div class="mt-16 w-full max-w-2xl fade-in-up">
     <h2 class="text-3xl text-red-400 mb-4 text-center">📜 Server Rules</h2>
     <ul class="list-disc text-gray-300 pl-6 space-y-2 font-sans">
@@ -84,7 +97,6 @@
     </ul>
   </div>
 
-  <!-- Meet the Team -->
   <div class="mt-16 w-full max-w-2xl fade-in-up">
     <h2 class="text-3xl text-purple-400 mb-4 text-center">👥 Meet the Team</h2>
     <div class="bg-gray-800 rounded-xl p-4 text-center shadow-lg">
@@ -94,7 +106,6 @@
     </div>
   </div>
 
-  <!-- Getting Started Guide -->
   <div class="mt-16 w-full max-w-3xl fade-in-up">
     <h2 class="text-3xl text-yellow-400 mb-4 text-center">🧭 Getting Started</h2>
     <div class="bg-gray-800 rounded-xl p-6 space-y-4 shadow-lg font-sans">
@@ -110,7 +121,6 @@
     </div>
   </div>
 
-  <!-- Footer -->
   <footer class="mt-16 mb-6 text-sm text-gray-500 text-center fade-in-up font-sans">
     Made with ❤️ for the community • James Club0 • Thankan SMP
   </footer>
