@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
-
+  
   <style>
     body {
       font-family: 'Orbitron', sans-serif;
@@ -58,17 +58,33 @@
     </div>
   </section>
 
-  <div class="mt-10 w-full max-w-2xl fade-in-up">
     <div class="bg-gray-900 rounded-2xl shadow-xl p-6 mb-6 hover:scale-105 transition-transform">
       <h2 class="text-2xl text-yellow-400">Java Edition</h2>
-      <p class="text-gray-300 mt-2">IP: <span class="text-white font-mono">thankansmp.run.place</span></p>
+      <p class="text-gray-300 mt-2">
+        IP: <span class="text-white font-mono">thankansmp.run.place</span>
+        <button onclick="copyToClipboard('thankansmp.run.place')" class="ml-2 px-3 py-1 bg-yellow-500 text-black rounded hover:bg-yellow-600 text-sm">Copy</button>
+      </p>
+      <p class="text-gray-300 mt-1">
+        Dynamic IP: <span class="text-white font-mono">structure-envelope.gl.joinmc.link</span>
+        <button onclick="copyToClipboard('structure-envelope.gl.joinmc.link')" class="ml-2 px-3 py-1 bg-yellow-500 text-black rounded hover:bg-yellow-600 text-sm">Copy</button>
+      </p>
     </div>
+
     <div class="bg-gray-900 rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform">
       <h2 class="text-2xl text-blue-400">Bedrock Edition</h2>
-      <p class="text-gray-300 mt-2">IP: <span class="text-white font-mono">bedrock.thankansmp.run.place</span></p>
-      <p class="text-gray-300">Port: <span class="text-white font-mono">1682</span></p>
+      <p class="text-gray-300 mt-2">
+        IP: <span class="text-white font-mono">bedrock.thankansmp.run.place</span>
+        <button onclick="copyToClipboard('bedrock.thankansmp.run.place')" class="ml-2 px-3 py-1 bg-blue-500 text-black rounded hover:bg-blue-600 text-sm">Copy</button>
+      </p>
+      <p class="text-gray-300">
+        Port: <span class="text-white font-mono">1682</span>
+        <button onclick="copyToClipboard('1682')" class="ml-2 px-3 py-1 bg-blue-500 text-black rounded hover:bg-blue-600 text-sm">Copy</button>
+      </p>
+      <p class="text-gray-300 mt-1">
+        Dynamic IP: <span class="text-white font-mono">views-glasgow.gl.at.ply.gg:1682</span>
+        <button onclick="copyToClipboard('views-glasgow.gl.at.ply.gg:1682')" class="ml-2 px-3 py-1 bg-blue-500 text-black rounded hover:bg-blue-600 text-sm">Copy</button>
+      </p>
     </div>
-  </div>
 
   <div class="mt-10 text-center fade-in-up">
     <h2 class="text-2xl md:text-3xl text-cyan-400 mb-4">🎮 Join Our Discord</h2>
@@ -126,4 +142,12 @@
   </footer>
 
 </body>
+<script>
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Copied: " + text);
+    });
+  }
+</script>
+
 </html>
